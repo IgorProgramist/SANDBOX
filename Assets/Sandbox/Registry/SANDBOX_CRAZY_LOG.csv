@@ -1,0 +1,2 @@
+id,name,batch,status,date_added,date_done,packages_required,external_apis,validate_first,outcome,notes
+S01_001,anti_gravity_zone_3d,S01,PLANNED,2026-06-18,,none,none,no,,First Sandbox experiment
