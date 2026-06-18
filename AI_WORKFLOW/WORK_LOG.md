@@ -18,3 +18,16 @@
 **Not done / deferred:** No experiments started (by design).  
 **Files changed:** AI_WORKFLOW/** (all new), Assets/Sandbox/Registry/**, Assets/Sandbox/Docs/**, CLAUDE.md, AGENTS.md  
 **Next:** Start S01_anti_gravity_zone_3d.
+
+---
+
+### SESSION 2026-06-18 | Agent: Claude Code | Branch: SANDBOX | Mode: CONVEYOR PLANNING
+**Goal:** Create experiment plan for S01_001 anti_gravity_zone_3d (docs-only pass).  
+**Done:**  
+- Created `Assets/Sandbox/Docs/S01_001_anti_gravity_zone_3d_PLAN.md` (full planning doc).  
+- Updated `AI_WORKFLOW/CURRENT_STATE.md` (phase → Planning).  
+- Updated `AI_WORKFLOW/PROMPT_HISTORY.md` (added PH-001).  
+- Added `AI_WORKFLOW/REPORTS/S01_001_PLANNING_REPORT.md`.  
+**Not done / deferred:** No runtime scripts. No scenes. No prefabs.  
+**Files changed:** Assets/Sandbox/Docs/S01_001_anti_gravity_zone_3d_PLAN.md, AI_WORKFLOW/WORK_LOG.md, AI_WORKFLOW/CURRENT_STATE.md, AI_WORKFLOW/PROMPT_HISTORY.md, AI_WORKFLOW/REPORTS/S01_001_PLANNING_REPORT.md  
+**Next:** Implement AntiGravityZone.cs + test scene (separate implementation pass).

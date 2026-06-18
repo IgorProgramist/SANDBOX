@@ -3,21 +3,24 @@
 _Last updated: 2026-06-18_
 
 ## Phase
-**Setup** — AI_WORKFLOW initialised. No experiments started yet.
+**Planning** — S01_001 anti_gravity_zone_3d plan written. Ready for implementation pass.
 
 ## What exists
 - Baseline Unity 6 / HDRP project (default URP starter, no custom scripts).
-- Git repo on `master` branch.
-- AI_WORKFLOW scaffold created.
-- Assets/Sandbox/ directory scaffold created.
+- Git repo on `SANDBOX` branch.
+- AI_WORKFLOW scaffold complete.
+- Assets/Sandbox/ directory scaffold complete.
+- `Assets/Sandbox/Docs/S01_001_anti_gravity_zone_3d_PLAN.md` — full planning doc.
 
 ## What does NOT exist yet
 - Any experiment scripts or prefabs.
 - No custom shaders, no TMP UI, no ScriptableObjects.
 - No packages beyond Unity defaults.
+- No test scenes.
 
-## First planned experiment
-`S01_anti_gravity_zone_3d` — see REGISTRY_INDEX.md and BATCHES/BATCH_01.md.
+## Active experiment
+`S01_001 anti_gravity_zone_3d` — PLANNED.  
+Plan doc: `Assets/Sandbox/Docs/S01_001_anti_gravity_zone_3d_PLAN.md`
 
 ## Known issues
 None.
