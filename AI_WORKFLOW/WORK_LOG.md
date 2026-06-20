@@ -31,3 +31,15 @@
 **Not done / deferred:** No runtime scripts. No scenes. No prefabs.  
 **Files changed:** Assets/Sandbox/Docs/S01_001_anti_gravity_zone_3d_PLAN.md, AI_WORKFLOW/WORK_LOG.md, AI_WORKFLOW/CURRENT_STATE.md, AI_WORKFLOW/PROMPT_HISTORY.md, AI_WORKFLOW/REPORTS/S01_001_PLANNING_REPORT.md  
 **Next:** Implement AntiGravityZone.cs + test scene (separate implementation pass).
+
+---
+
+### SESSION 2026-06-20 | Agent: Claude Code | Branch: SANDBOX | Mode: RUNTIME_IMPLEMENTATION_APPROVED
+**Goal:** Create runtime script `Assets/Sandbox/Scripts/AntiGravityZone.cs` (GATE: APPROVE_SANDBOX_RUNTIME_S01_001).  
+**Done:**  
+- Created `Assets/Sandbox/Scripts/AntiGravityZone.cs` — full MonoBehaviour implementation.  
+- Namespace `Sandbox.S01`, RequireComponent(Collider), HashSet tracking, FixedUpdate force, null cleanup, OnDrawGizmosSelected.  
+- Updated WORK_LOG, CURRENT_STATE, PROMPT_HISTORY, REPORTS.  
+**Not done / deferred:** No scene created. No prefab. No material. No commit.  
+**Files changed:** Assets/Sandbox/Scripts/AntiGravityZone.cs (NEW), AI_WORKFLOW/WORK_LOG.md, AI_WORKFLOW/CURRENT_STATE.md, AI_WORKFLOW/PROMPT_HISTORY.md, AI_WORKFLOW/REPORTS/S01_001_IMPLEMENTATION_REPORT.md  
+**Next:** OpenCode verify pass → create test scene → manual Play Mode test.
