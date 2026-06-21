@@ -1,53 +1,57 @@
-# CLAUDE.md — Sandbox Project (project-level overrides)
+# CLAUDE.md — Sandbox
+# Location: project root (Sandbox/CLAUDE.md)
 
-## Inherits from
-Global `~/.claude/CLAUDE.md` — all 4 Karpathy rules and global hard locks apply here too.
+## THIS PROJECT
+**Purpose:** HDRP R&D lab for runtime experiments (physics zones, effects, mechanics).
+**Unity:** 6000.3.9f1 · HDRP 17.3.0 · disposable sandbox (not production)
+**Phase:** Runtime experiments — runtime LOCKED until explicit gate (D5)
 
-## What is this project
-Sandbox = Igor's crazy-experiments Unity project.  
-Completely separate from APP/ToolLab. Experiments can and should fail freely.
+---
 
-## Stack
-- Unity 6 / HDRP
-- C# / uGUI / TextMeshProUGUI
-- No external packages without Igor explicit approval
+## THE 4 RULES (Karpathy — always active)
 
-## AI Workflow location
-`AI_WORKFLOW/` — read `AI_WORKFLOW/00_START_HERE.md` at session start.
+### 1. THINK BEFORE CODING
+State assumptions before implementing. If unclear → ask, do not guess.
+Multiple interpretations → present them, do not pick silently.
 
-## Files allowed to create or edit
+### 2. SIMPLICITY FIRST
+Minimum code that solves the task. No speculative features.
+No abstractions for single use.
+
+### 3. SURGICAL CHANGES
+Touch ONLY files in FILES_ALLOWED. No adjacent improvements.
+No "while I'm here." Every changed line must trace to the request.
+
+### 4. GOAL-DRIVEN EXECUTION
+State a plan before coding. Loop until done or report why blocked.
+Never claim "done" without verification.
+
+---
+
+## PROJECT STACK
+- Unity 6000.3.9f1 · HDRP 17.3.0 · C#
+- Runtime scripts: `Assets/Sandbox/Runtime/`
+- Namespace: `Sandbox.Runtime`
+- HDRP shader skill: unity-hdrp-shader-helper (this is an HDRP lane)
+
+## HARD LOCKS (Sandbox-specific)
+- **Runtime is LOCKED by default (D5)** — no runtime .cs writes until explicit APPROVE_SANDBOX_RUNTIME
+- Docs/planning phase allowed; runtime implementation gated
+- HDRP API: VALIDATE_FIRST vs Unity 6 HDRP package docs
+- No git push, no package install, no ProjectSettings edits
+- TryGetComponent (not GetComponent), Gizmos for debug
+- ~400 mini-projects = CSV registry in SANDBOX, NOT 400 separate scenes/chats
+
+## FILES_ALLOWED (default — docs only until runtime gate)
 ```
-AI_WORKFLOW/**
-Assets/Sandbox/**
-CLAUDE.md
-AGENTS.md
-.cursor/rules/**
+Assets/Sandbox/Docs/
+Assets/Sandbox/Registry/   (CSV mini-project registry)
+```
+After APPROVE_SANDBOX_RUNTIME:
+```
+Assets/Sandbox/Runtime/
 ```
 
-## Files NEVER to touch
-```
-.gitignore
-ProjectSettings/**
-Packages/**
-UserSettings/**
-Library/**
-Temp/**
-Logs/**
-.mcp.json
-```
-
-## Sandbox-specific hard locks
-- No package installs without Igor explicit approval.
-- No external API calls until `VALIDATE_FIRST` recorded in DECISIONS.md.
-- No experiment promotes to APP without prefab card + Clear/Unity review.
-- No git stage/commit/push — Igor triggers all git operations manually.
-- Do not edit .gitignore under any circumstances.
-
-## Experiment naming
-`S##_experiment_name` — batch prefix S01–S05.
-
-## Namespace
-`Sandbox.*` for all experiment scripts.
-
-## Commit protocol
-See `AI_WORKFLOW/COMMIT_PROTOCOL.md`.
+## PIPELINE NOTE
+Sandbox = HDRP. Use unity-hdrp-shader-helper (not the URP twin).
+URP lanes (APP/MCP) use unity-urp-shader-helper instead.

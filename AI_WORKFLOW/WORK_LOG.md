@@ -43,3 +43,15 @@
 **Not done / deferred:** No scene created. No prefab. No material. No commit.  
 **Files changed:** Assets/Sandbox/Scripts/AntiGravityZone.cs (NEW), AI_WORKFLOW/WORK_LOG.md, AI_WORKFLOW/CURRENT_STATE.md, AI_WORKFLOW/PROMPT_HISTORY.md, AI_WORKFLOW/REPORTS/S01_001_IMPLEMENTATION_REPORT.md  
 **Next:** OpenCode verify pass → create test scene → manual Play Mode test.
+
+---
+
+### SESSION 2026-06-21 | Agent: Claude Code | Branch: SANDBOX | Mode: DOCS_ONLY_PLANNING
+**Goal:** Create S01_002 TimeSlowBubble planning doc (Gate: OPEN_SANDBOX_S01_002).  
+**Done:**  
+- Created `Assets/Sandbox/Docs/S01_002_time_slow_bubble_PLAN.md` (full planning doc).  
+- Created `AI_WORKFLOW/REPORTS/S01_002_PLANNING_REPORT.md`.  
+- Updated CURRENT_STATE.md, PROMPT_HISTORY.md, WORK_LOG.md.  
+**Not done / deferred:** No runtime script. No scene. No prefab. No material.  
+**Files changed:** Assets/Sandbox/Docs/S01_002_time_slow_bubble_PLAN.md (NEW), AI_WORKFLOW/REPORTS/S01_002_PLANNING_REPORT.md (NEW), AI_WORKFLOW/CURRENT_STATE.md, AI_WORKFLOW/PROMPT_HISTORY.md, AI_WORKFLOW/WORK_LOG.md  
+**Next:** Igor approves gate APPROVE_SANDBOX_RUNTIME_S01_002 → implement TimeSlowBubble.cs.
